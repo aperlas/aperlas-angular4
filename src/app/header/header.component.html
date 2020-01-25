@@ -1,0 +1,13 @@
+<div id="header">
+  <button mat-button id="header-menu" (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="header-title">Header</div>
+  <div class="header-spacer"></div>
+  <div class="right-buttons" *ngIf="showButtons()">
+    <button mat-button class="header-button" (click)="goToAbout()">About</button>
+    <button mat-button class="header-button" (click)="goToExperience()">Experience</button>
+    <button mat-button class="header-button" (click)="goToContact()">Contact</button>
+  </div>
+</div>
+
